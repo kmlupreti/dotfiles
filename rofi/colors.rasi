@@ -1,0 +1,7 @@
+/* colors */
+
+* {
+  bg:   #212121;
+  fg:   #FFFFFF;
+  se:	#3D3D3D;
+}
