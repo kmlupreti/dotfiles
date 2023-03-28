@@ -1,0 +1,18 @@
+theme = "ayu_dark"
+
+
+[editor]
+line-number = "relative"
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal]
+C-s = ":w" # ctrl-s saves file
+C-q = ":q" # ctrl-q quits program
+
+[keys.insert]
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
