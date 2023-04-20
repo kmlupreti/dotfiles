@@ -85,7 +85,7 @@ bindsym Mod1+Shift+B exec firefox
 bindsym Mod1+Shift+D exec evince
 
 # kill focused window
-bindsym Mod1+F4 kill
+bindsym $mod+Q kill
 
 # goto prev/next workspace
 bindsym $mod+bracketleft workspace prev
