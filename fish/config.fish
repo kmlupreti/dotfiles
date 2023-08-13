@@ -8,15 +8,16 @@ abbr -a pr 'paru -R'
 
 # append to PATH
 set PATH $PATH ~/.cargo/bin
+set PATH $PATH ~/.local/bin
 
 # initial greeting
 function fish_greeting
-	# neofetch
+	# no greeting
 end
 
-# Start X at login
+# Start GUI at login
 if status --is-login
   if test (tty) = "/dev/tty1"
-    startx
+		Hyprland &> /dev/null
   end
 end
