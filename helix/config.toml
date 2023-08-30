@@ -1,6 +1,5 @@
 theme = "ayu_dark"
 
-
 [editor]
 line-number = "relative"
 mouse = false
@@ -15,4 +14,7 @@ C-s = ":w" # ctrl-s saves file
 C-q = ":q" # ctrl-q quits program
 
 [keys.insert]
-j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+j = { h = "normal_mode" } # Maps `jh` to exit insert mode
+
+[keys.normal."space"]
+f = "file_picker_in_current_buffer_directory"
