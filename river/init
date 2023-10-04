@@ -3,6 +3,9 @@
 # start autostart programs
 riverctl spawn "dex -a"
 
+# set wallpaper
+riverctl spawn 'swaybg -i ~/.local/share/wallpapers/wall.jpg -m fill'
+
 # restart river config
 riverctl map normal Super+Shift R spawn "~/.config/river/init"
 
