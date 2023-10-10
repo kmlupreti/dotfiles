@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-#icons directory
-iDIR="$HOME/.config/mako/icons"
+# Icons directory
+iDIR="$HOME/.local/icons"
 
 # get current value of brightness in percentage
 current_val () {

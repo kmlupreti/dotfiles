@@ -1,5 +1,5 @@
 #!/bin/sh
-swaybg -i $(find ~/.local/share/wallpapers/. -type f | shuf -n1) -m fill &
+swaybg -i $(find ~/.local/share/wallpapers/ -type f | shuf -n1) -m fill &
 OLD_PID=$!
 while true; do
     sleep 600
