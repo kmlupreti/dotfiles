@@ -3,6 +3,9 @@
 # start autostart programs
 riverctl spawn "dex -a"
 
+# start notification daemon
+riverctl spawn mako
+
 # set wallpaper
 riverctl spawn ~/.local/scripts/wallpaper.sh
 
@@ -36,6 +39,10 @@ riverctl map normal Super Q close
 
 # exit river
 riverctl map normal Super+Shift E exit
+
+# power 
+riverctl map normal Super End 'systemctl reboot'
+riverctl map normal Super Delete 'systemctl poweroff -i'
 
 # focus the next/previous view in the layout stack
 riverctl map normal Super L focus-view next
