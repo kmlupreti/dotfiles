@@ -12,10 +12,10 @@ riverctl spawn ~/.local/scripts/wallpaper.sh
 # restart river config
 riverctl map normal Super+Shift R spawn ~/.config/river/init
 
-#enable tap to click
+# enable tap to click
 riverctl input pointer-1739-30966-Synaptics_TM3096-006 tap enabled
 
-# Media keys
+# media keys
 riverctl map normal None XF86AudioRaiseVolume  spawn '~/.local/scripts/volume.sh --up'
 riverctl map normal None XF86AudioLowerVolume  spawn '~/.local/scripts/volume.sh --down'
 riverctl map normal None XF86AudioMute spawn '~/.local/scripts/volume.sh --mute'
@@ -25,8 +25,18 @@ riverctl map normal None XF86AudioPlay  spawn 'playerctl play-pause'
 riverctl map normal None XF86AudioPrev  spawn 'playerctl previous'
 riverctl map normal None XF86AudioNext  spawn 'playerctl next'
 
+# power 
+riverctl map normal Control+Alt Delete spawn "systemctl reboot"
+riverctl map normal Super End spawn "systemctl poweroff -i"
+
 # terminal
 riverctl map normal Super Return spawn alacritty
+
+# file manager
+riverctl map normal Super E spawn nautilus
+
+# document reader
+riverctl map normal Super D spawn evince
 
 # browser
 riverctl map normal Super B spawn firefox
@@ -40,10 +50,6 @@ riverctl map normal Super Q close
 # exit river
 riverctl map normal Super+Shift E exit
 
-# power 
-riverctl map normal Super End 'systemctl reboot'
-riverctl map normal Super Delete 'systemctl poweroff -i'
-
 # focus the next/previous view in the layout stack
 riverctl map normal Super L focus-view next
 riverctl map normal Super H focus-view previous
@@ -54,18 +60,6 @@ riverctl map normal Super T zoom
 # decrease/increase the main ratio of rivertile(1)
 riverctl map normal Super+Shift H send-layout-cmd rivertile "main-ratio -0.05"
 riverctl map normal Super+Shift L send-layout-cmd rivertile "main-ratio +0.05"
-
-# move views
-riverctl map normal Super Left move left 100
-riverctl map normal Super Down move down 100
-riverctl map normal Super Up move up 100
-riverctl map normal Super Right move right 100
-
-# resize views
-riverctl map normal Super+Shift Left resize horizontal -100
-riverctl map normal Super+Shift  Down resize vertical 100
-riverctl map normal Super+Shift  Up resize vertical -100
-riverctl map normal Super+Shift  Right resize horizontal 100
 
 # Super + Left Mouse Button to move views
 riverctl map-pointer normal Super BTN_LEFT move-view
