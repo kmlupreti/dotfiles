@@ -44,6 +44,12 @@ riverctl map normal Super B spawn firefox
 # menu
 riverctl map normal Super M spawn wofi
 
+# play focus music
+riverctl map normal Super C spawn 'pkill cvlc || cvlc ~/Backup/focus/'
+
+# night light
+riverctl map normal Super N spawn 'pkill gammastep || gammastep -O 4500'
+
 # close the focused view
 riverctl map normal Super Q close
 
