@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# start autostart programs
+# start autostart programs at /etc/xdg/autostart
 riverctl spawn "dex -a"
 
 # start notification daemon
@@ -9,8 +9,8 @@ riverctl spawn mako
 # set wallpaper
 riverctl spawn ~/.local/scripts/wallpaper.sh
 
-# restart river config
-riverctl map normal Super+Shift R spawn ~/.config/river/init
+# start status bar
+riverctl spawn waybar
 
 # enable tap to click
 riverctl input pointer-1739-30966-Synaptics_TM3096-006 tap enabled
@@ -25,27 +25,23 @@ riverctl map normal None XF86AudioPlay  spawn 'playerctl play-pause'
 riverctl map normal None XF86AudioPrev  spawn 'playerctl previous'
 riverctl map normal None XF86AudioNext  spawn 'playerctl next'
 
-# power 
-riverctl map normal Control+Alt Delete spawn "systemctl reboot"
-riverctl map normal Super End spawn "systemctl poweroff -i"
+# restart river config
+riverctl map normal Super+Shift R spawn ~/.config/river/init
+
+# power menu
+riverctl map normal Control+Alt Delete spawn "~/.local/scripts/powermenu.sh"
 
 # terminal
 riverctl map normal Super Return spawn alacritty
 
-# file manager
-riverctl map normal Super E spawn nautilus
-
 # document reader
-riverctl map normal Super D spawn evince
+riverctl map normal Super D spawn zathura
 
 # browser
 riverctl map normal Super B spawn firefox
 
 # menu
 riverctl map normal Super M spawn wofi
-
-# play focus music
-riverctl map normal Super C spawn 'pkill vlc || cvlc ~/Backup/focus/'
 
 # night light
 riverctl map normal Super N spawn 'pkill gammastep || gammastep -O 4500'
@@ -93,23 +89,15 @@ do
     riverctl map normal Super+Shift+Control $i toggle-view-tags $tags
 done
 
-# Super+0 to focus all tags
-# Super+Shift+0 to tag focused view with all tags
-all_tags=$(((1 << 32) - 1))
-riverctl map normal Super 0 set-focused-tags $all_tags
-riverctl map normal Super+Shift 0 set-view-tags $all_tags
+# Super+Period and Super+Comma to focus the next/previous output
+riverctl map normal Super Period focus-tag next
+riverctl map normal Super Comma focus-tag previous
 
 # Super+Space to toggle float
 riverctl map normal Super Space toggle-float
 
 # Super+F to toggle fullscreen
 riverctl map normal Super F toggle-fullscreen
-
-# Super+{Up,Right,Down,Left} to change layout orientation
-riverctl map normal Super+Alt Up    send-layout-cmd rivertile "main-location top"
-riverctl map normal Super+Alt Right send-layout-cmd rivertile "main-location right"
-riverctl map normal Super+Alt Down  send-layout-cmd rivertile "main-location bottom"
-riverctl map normal Supe+Altr Left  send-layout-cmd rivertile "main-location left"
 
 # Set keyboard repeat rate
 riverctl set-repeat 50 300

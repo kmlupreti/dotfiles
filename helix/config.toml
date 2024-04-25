@@ -10,11 +10,14 @@ normal = "block"
 select = "underline"
 
 [keys.normal]
-C-s = ":w" # ctrl-s saves file
-C-q = ":q" # ctrl-q quits program
-
+C-s = ":w" # save file
+C-q = ":q" # quit program
+C-p = ":bp" # buffer next
+C-n = ":bn" # buffer previous
+C-o = ":o" # open a file
+  
 [keys.insert]
-j = { h = "normal_mode" } # Maps `jh` to exit insert mode
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [keys.normal."space"]
 f = "file_picker_in_current_buffer_directory"

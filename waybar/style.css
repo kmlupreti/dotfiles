@@ -1,0 +1,47 @@
+* {
+    /*all: initial; Ignore gtk theme*/ 
+    border: none;
+    border-radius: 10px;
+    font-family: "FiraCode Nerd Font","Roboto", "Helvetica", "Arial", "sans-serif";
+    font-size: 13px;
+    min-height: 0;
+    padding: 1px;
+    /* opacity: 0; */ 
+}
+
+window#waybar {
+    background-color: #0a0e14;
+    transition-property: background-color;
+    transition-duration: .5s;
+    opacity: 0.9;  
+}
+
+window#waybar.empty #window {
+	background: transparent;
+}
+
+#tags button{
+    padding: 3px;
+    border-radius: 10px;
+    min-width: 20px;
+}
+
+#tags button.focused{
+    color: #ffffff;
+    background-color: grey;
+}
+
+#battery,
+#clock,
+#cpu,
+#window,
+#memory,
+#network,
+#tray
+{
+  background: @grey; 
+  padding: 0 10px;
+  margin: 3px 3px 3px 3px;
+  background-clip: padding-box;
+  color: @colbg;
+}
