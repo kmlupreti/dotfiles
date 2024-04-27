@@ -14,7 +14,16 @@ C-s = ":w" # save file
 C-q = ":q" # quit program
 C-p = ":bp" # buffer next
 C-n = ":bn" # buffer previous
-C-o = ":o" # open a file
+
+# Use system clipboard
+y = "yank_main_selection_to_primary_clipboard"
+p = "paste_primary_clipboard_before"
+
+[keys.normal.g]
+# select lines https://github.com/helix-editor/helix/issues/1630#issuecomment-1511995639
+l = ["collapse_selection", "extend_to_line_end"]
+h = ["collapse_selection", "extend_to_line_start"]
+s = ["collapse_selection", "select_mode", "goto_first_nonwhitespace", "exit_select_mode"]
   
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
