@@ -2,10 +2,10 @@
 > This repo contains dotfiles ( or configs) of various programs and tools that I use in Linux.
 
 # Current setup
-* OS: Void GNU/Linux
+* OS: Arch Linux
 * Hardware: Dell 3567 (Intel i3-6006U x86_64)
 * Display server: Wayland
-* Window Manager/Compositor: RiverWM
+* Window Manager/Compositor: Hyprland
 * Terminal: Alacritty
 * Shell: Fish
 * Prompt: Starship
