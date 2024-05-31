@@ -10,14 +10,7 @@ normal = "block"
 select = "underline"
 
 [keys.normal]
-C-s = ":w" # save file
 C-q = ":q" # quit program
-C-p = ":bp" # buffer next
-C-n = ":bn" # buffer previous
-
-# Use system clipboard
-y = "yank_main_selection_to_primary_clipboard"
-p = "paste_primary_clipboard_before"
 
 [keys.normal.g]
 # select lines https://github.com/helix-editor/helix/issues/1630#issuecomment-1511995639
@@ -30,3 +23,5 @@ j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [keys.normal."space"]
 f = "file_picker_in_current_buffer_directory"
+q = ":buffer-close"
+s = ":w"
