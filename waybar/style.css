@@ -1,34 +1,34 @@
 * {
-    /*all: initial; Ignore gtk theme*/ 
     border: none;
     border-radius: 10px;
     font-family: "FiraCode Nerd Font","Roboto", "Helvetica", "Arial", "sans-serif";
     font-size: 13px;
     min-height: 0;
     padding: 1px;
-    /* opacity: 0; */ 
+    background: transparent;
 }
 
-window#waybar {
-    background-color: #0a0e14;
-    transition-property: background-color;
-    transition-duration: .5s;
-    opacity: 0.9;  
+#workspaces button {
+  padding: 0 4px;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
 }
 
-window#waybar.empty #window {
-	background: transparent;
+#workspaces button:hover {
+  background: inherit;
+  border-top: 2px solid #c9545d;
 }
 
-#tags button{
-    padding: 3px;
-    border-radius: 10px;
-    min-width: 20px;
+#workspaces button.active {
+  border-top: 2px solid #c7c7c7;
+  color: #b3b1ad;
 }
 
-#tags button.focused{
-    color: #ffffff;
-    background-color: grey;
+#workspaces button.urgent {
+  background-color: #eb4d4b;
 }
 
 #battery,
@@ -37,11 +37,12 @@ window#waybar.empty #window {
 #window,
 #memory,
 #network,
-#tray
+#tray,
+#workspaces
 {
-  background: @grey; 
+  color: #b3b1ad;
+  background: #0a0e14; 
   padding: 0 10px;
   margin: 3px 3px 3px 3px;
   background-clip: padding-box;
-  color: @colbg;
 }
