@@ -14,3 +14,4 @@
 * Notification Daemon: `mako`
 * Menus: `wofi`
 * Font: `Fira Code Nerd Font`
+* Colorscheme: `Ayu Dark`
