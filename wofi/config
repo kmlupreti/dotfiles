@@ -11,7 +11,7 @@ on-touch=dismiss
 
 # STYLE OPTIONS
 font=FiraCode Nerd Font 10
-width=200
+width=250
 height=50
 margin=5
 padding=10
