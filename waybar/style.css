@@ -5,7 +5,10 @@
     font-size: 13px;
     min-height: 0;
     padding: 1px;
-    background: transparent;
+}
+
+#waybar {
+      background: transparent;
 }
 
 #workspaces button {
@@ -33,9 +36,8 @@
 
 #battery,
 #clock,
-#cpu,
+#pulseaudio,
 #window,
-#memory,
 #network,
 #tray,
 #workspaces

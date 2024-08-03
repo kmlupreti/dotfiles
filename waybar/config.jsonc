@@ -7,10 +7,9 @@
         "clock"
     ],
     "modules-right": [
-        "battery",
+        "pulseaudio",
         "network",
-        "memory",
-        "cpu",
+        "battery",
         "tray"
     ],
     "battery": {
@@ -25,8 +24,24 @@
         "interval": 10
     },
     "clock": {
-        "format": "  {:%I:%M %p     %Y-%m-%d %A}",
-        "interval": 1
+        "format": "  {:%I:%M %p }",
+        "format-alt": "  {:%I:%M %p     %Y-%m-%d %A}",
+        "interval": 1,
+        "tooltip": false
+    },
+       "pulseaudio": {
+        "format": "{icon} {volume}% ",
+        "format-bluetooth": "󰂯 {icon} {volume}%",
+        "format-muted": "󰝟 ",
+        "format-icons": {
+            "headphone": " ",
+            "headset": " ",
+            "default": [" "," ", " "]
+        },
+        "tooltip": false,
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
     },
     "hyprland/window": {
         "format": "  {}",
@@ -34,27 +49,17 @@
     },
     "hyprland/workspaces": {
         "disable-scroll": true,
-        "format": "{name}"
-    },
-    "cpu": {
-        "format": "   {}% ",
-        "max-length": 10,
-        "interval": 10
-    },
-    "memory": {
-        "interval": 30,
-        "format": "  {used:0.1f}G/{total:0.1f}G "
+        "format": "{name}",
+        "persistent-workspaces": {
+                     "*": 4, 
+               }
     },
     "network": {
-        // "interface": "wlp2s0",
-        "format": "{ifname}",
-        "format-wifi": "   {essid} ({signalStrength}%)  ",
-        "format-ethernet": "󰈁 {ifname} ",
+        "format-wifi": " ",
+        "format-ethernet": "󰈀 ",
         "format-disconnected": "", //An empty format will hide the module.
-        "tooltip-format": "{ifname}",
-        "tooltip-format-wifi": "  {essid} ({signalStrength}%)  ",
-        "tooltip-format-ethernet": "󰈁 {ifname} ",
-        "tooltip-format-disconnected": "Disconnected",
+        "tooltip-format-wifi": " {essid} ({signalStrength}%)  {ipaddr} ",
+        "tooltip-format-ethernet": " {ipaddr} ",
         "max-length": 50,
         "interval": 10
     },
