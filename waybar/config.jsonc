@@ -24,8 +24,8 @@
         "interval": 10
     },
     "clock": {
-        "format": "  {:%I:%M %p }",
-        "format-alt": "  {:%I:%M %p     %Y-%m-%d %A}",
+        "format": "  {:%I:%M %p     %Y-%m-%d %A}",
+        "format-alt": "  {:%I:%M %p }",
         "interval": 1,
         "tooltip": false
     },
