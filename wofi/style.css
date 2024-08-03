@@ -5,7 +5,7 @@
 
 window {
   margin: 0;
-  background: #1f2430;
+  background: #0a0e14;
   border-radius: 10px;
   opacity: 0.90;
   animation-name: fadeIn;
@@ -15,7 +15,7 @@ window {
 #input {
   margin: 5px;
   border: none;
-  color: black;
+  color: #0a0e14;
 }
 
 #inner-box {
@@ -36,11 +36,11 @@ window {
 #text {
   margin: 8px;
   border: none;
-  color: #bfbab0;
+  color: #b3b1ad;
 }
 
 #entry:selected {
-  background: #33415e;
+  background: #1c2738;
   border: none;
   outline: none;
 }
