@@ -9,9 +9,6 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
-[keys.normal]
-C-q = ":q" # quit program
-
 [keys.normal.g]
 # select lines https://github.com/helix-editor/helix/issues/1630#issuecomment-1511995639
 l = ["collapse_selection", "extend_to_line_end"]
