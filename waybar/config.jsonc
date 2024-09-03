@@ -1,4 +1,5 @@
 {
+    "output": "eDP-1",
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
