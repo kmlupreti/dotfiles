@@ -8,7 +8,6 @@
         "clock"
     ],
     "modules-right": [
-        "network",
         "pulseaudio",
         "battery",
         "tray"
@@ -54,15 +53,6 @@
         // "persistent-workspaces": {
         //              "*": 4, 
         //        }
-    },
-    "network": {
-        "format-wifi": " ",
-        "format-ethernet": "󰈀 ",
-        "format-disconnected": "", //An empty format will hide the module.
-        "tooltip-format-wifi": " {essid} ({signalStrength}%)  {ipaddr} ",
-        "tooltip-format-ethernet": " {ipaddr} ",
-        "max-length": 50,
-        "interval": 10
     },
     "tray": {
         "icon-size": 19,

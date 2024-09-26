@@ -31,7 +31,6 @@ style = "Regular"
 
 [shell]
 program = "/usr/bin/fish"
-args = ["-l", "-c", "zellij"]
 
 [window.padding]
 x = 5
