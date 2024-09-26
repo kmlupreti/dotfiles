@@ -7,6 +7,7 @@
 * Display server: `Wayland`
 * Window Manager/Compositor: `Hyprland`
 * Terminal: `Alacritty`
+* Terminal Multiplexer: `Zellij`
 * Shell: `Fish`
 * Prompt: `Starship`
 * Status Bar: `waybar`
