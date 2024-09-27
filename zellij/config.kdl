@@ -1,7 +1,7 @@
 keybinds {
     normal clear-defaults=true {
         // pane settings 
-        bind "Alt p" { NewPane; }
+        bind "Alt n" { NewPane; }
         bind "Alt q" { CloseFocus; SwitchToMode "Normal"; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab  "Right"; }
@@ -14,10 +14,8 @@ keybinds {
         //tab settings
         bind "Alt t" { NewTab; SwitchToMode "Normal"; }
         bind "Alt Q" { CloseTab; SwitchToMode "Normal"; }
-        bind "Alt i" { GoToPreviousTab; SwitchToMode "Normal"; }
-        bind "Alt o" { GoToNextTab; SwitchToMode "Normal"; }
-        bind "Alt I" { MoveTab "Left"; }
-        bind "Alt O" { MoveTab "Right"; }
+        bind "Alt H" { MoveTab "Left"; }
+        bind "Alt L" { MoveTab "Right"; }
         bind "Alt r" { SwitchToMode "RenameTab"; TabNameInput 0; }
         bind "Alt 1" { GoToTab 1; SwitchToMode "Normal"; }
         bind "Alt 2" { GoToTab 2; SwitchToMode "Normal"; }
