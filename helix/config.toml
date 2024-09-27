@@ -9,6 +9,9 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[keys.normal] 
+X = ["extend_line_up", "extend_to_line_bounds"]
+
 [keys.normal.g]
 # select lines https://github.com/helix-editor/helix/issues/1630#issuecomment-1511995639
 l = ["collapse_selection", "extend_to_line_end"]
@@ -21,4 +24,7 @@ j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 [keys.normal."space"]
 f = "file_picker_in_current_buffer_directory"
 q = ":buffer-close"
-s = ":w"
+s = ":write"
+n = ":new"
+e = ":sh zellij run -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh" # file explorer
+t = ':sh zellij action new-pane --floating --cwd "$(pwd)" -- fish' # floating terminal
