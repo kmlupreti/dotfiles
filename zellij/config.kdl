@@ -10,6 +10,10 @@ keybinds {
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt /" { NextSwapLayout; }
+        bind "Alt d" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
+        bind "Alt f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
+        bind "Alt ]" { BreakPaneRight; SwitchToMode "Normal"; }
+        bind "Alt [" { BreakPaneLeft; SwitchToMode "Normal"; }
 
         //tab settings
         bind "Alt t" { NewTab; SwitchToMode "Normal"; }
@@ -26,6 +30,12 @@ keybinds {
         bind "Alt 7" { GoToTab 7; SwitchToMode "Normal"; }
         bind "Alt 8" { GoToTab 8; SwitchToMode "Normal"; }
         bind "Alt 9" { GoToTab 9; SwitchToMode "Normal"; }
+
+        // scroll
+        bind "Alt J" { PageScrollDown; }
+        bind "Alt K" { PageScrollUp; }
+        bind "Alt H" { ScrollToTop; SwitchToMode "Normal"; }
+        bind "Alt L" { ScrollToBottom; SwitchToMode "Normal"; }
     }
 }
 
@@ -35,8 +45,4 @@ plugins {
 }
 
 // options
-// on_force_close "quit"
-simplified_ui true
-// theme "nord"
-default_layout "compact"
-copy_clipboard "primary"
+theme "nord"
