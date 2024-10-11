@@ -16,3 +16,6 @@
 * Menus: `wofi`
 * Font: `Fira Code Nerd Font`
 * Colorscheme: `Ayu Dark`
+
+# screenshot
+![Screenshot](screenshot.png)
