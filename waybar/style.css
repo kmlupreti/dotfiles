@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 10px;
-    font-family: "FiraCode Nerd Font","Roboto", "Helvetica", "Arial", "sans-serif";
+    font-family: "FiraCode Nerd Font";
     font-size: 13px;
     min-height: 0;
     padding: 1px;
@@ -12,26 +12,25 @@
 }
 
 #workspaces button {
-  padding: 0 4px;
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
-  border: none;
-  border-radius: 0;
+  margin: 2px 4px ;
+  /* border: 4x; */
+  border-radius: 3px;
+  color: #b3b1ad;
 }
 
 #workspaces button:hover {
   background: inherit;
-  border-top: 2px solid #5c6773;
+  color: #5c6773;
 }
 
 #workspaces button.active {
-  border-top: 2px solid #ff8f40;
-  color: #b3b1ad;
+  color: #d0cec8;
+  background-color: #2d3640;
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  color: #2d3640;
+  background-color: #e6b450;
 }
 
 #battery,
@@ -42,8 +41,8 @@
 #tray,
 #workspaces
 {
-  color: #d0d0d0;
-  background: #2d3640; 
+  color: #2d3640;
+  background: #0f1419; 
   padding: 0 10px;
   margin: 3px 3px 3px 3px;
   background-clip: padding-box;
