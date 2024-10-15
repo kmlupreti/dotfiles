@@ -13,14 +13,12 @@
 
 #workspaces button {
   margin: 2px 4px ;
-  /* border: 4x; */
   border-radius: 3px;
-  color: #b3b1ad;
 }
 
 #workspaces button:hover {
-  background: inherit;
-  color: #5c6773;
+  color: #131721;
+  background-color: #131721;
 }
 
 #workspaces button.active {
@@ -41,7 +39,7 @@
 #tray,
 #workspaces
 {
-  color: #2d3640;
+  color: #6a7e95;
   background: #0f1419; 
   padding: 0 10px;
   margin: 3px 3px 3px 3px;
