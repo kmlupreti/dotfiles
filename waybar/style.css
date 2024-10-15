@@ -22,11 +22,11 @@
 
 #workspaces button:hover {
   background: inherit;
-  border-top: 2px solid #c9545d;
+  border-top: 2px solid #5c6773;
 }
 
 #workspaces button.active {
-  border-top: 2px solid #c7c7c7;
+  border-top: 2px solid #ff8f40;
   color: #b3b1ad;
 }
 
@@ -42,8 +42,8 @@
 #tray,
 #workspaces
 {
-  color: #b3b1ad;
-  background: #0a0e14; 
+  color: #d0d0d0;
+  background: #2d3640; 
   padding: 0 10px;
   margin: 3px 3px 3px 3px;
   background-clip: padding-box;
