@@ -44,12 +44,12 @@
         "ignored-sinks": ["Easy Effects Sink"]
     },
         "mpris": {
-        "format": "{player_icon} {status_icon} {title}",
         "dynamic-order": ["title","artist"],
-        "format-paused": "{player_icon} {status_icon} {title}",
+        "format": "{player_icon} {status_icon} {dynamic} ",
+        "format-paused": "{player_icon} {status_icon} {dynamic} ",
         "player-icons": {
-        "default": "",
-        "mpv": "🎵",
+        "default": " ",
+        "mpv": " ",
         "firefox": "󰈹 ",
         "vlc": "󰕼 "
 
