@@ -17,5 +17,7 @@
 * Font: `Fira Code Nerd Font`
 * Colorscheme: `Ayu Dark`
 
-# screenshot
-![Screenshot](screenshot.png)
+# screenshots
+![yazi](screenshots/yazi.png)
+![menu](screenshots/menu.png)
+![fetch](screenshots/fetch.png)
