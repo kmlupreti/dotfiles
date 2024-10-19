@@ -11,6 +11,7 @@
 * Shell: `Fish`
 * Prompt: `Starship`
 * Status Bar: `waybar`
+* File manager: `Yazi`
 * Text editor: `Helix`
 * Notification Daemon: `mako`
 * Menus: `wofi`
