@@ -8,30 +8,29 @@
         "clock"
     ],
     "modules-right": [
+        "mpris",
         "pulseaudio",
         "battery",
         "tray"
     ],
     "battery": {
         "format": "{icon} {capacity}% ",
-        "format-icons": [
-            "󰁻",
-            "󰁽",
-            "󰁿",
-            "󰂁",
-            "󰁹"
-        ],
-        "interval": 10
+        "format-icons": [" ", " ", " ", " ", " "],
+         "states": {
+            "warning": 30,
+            "critical": 15
+    },
+        "interval": 60
     },
     "clock": {
-        "format": "  {:%I:%M %p     %Y-%m-%d %A}",
-        "format-alt": "  {:%I:%M %p }",
+        "format": "  {:%I:%M %p }",
+        "format-alt": "  {:%I:%M %p     %Y-%m-%d %A}",
         "interval": 1,
         "tooltip": false
     },
        "pulseaudio": {
         "format": "{icon} {volume}% ",
-        "format-bluetooth": "󰂯 {icon} {volume}%",
+        "format-bluetooth": " {icon} {volume}%",
         "format-muted": "󰝟 ",
         "format-icons": {
             "headphone": " ",
@@ -40,12 +39,30 @@
         },
         "tooltip": false,
         "scroll-step": 1,
-        "on-click": "pavucontrol",
+        "on-click":"~/.local/scripts/volume.sh --mute",
+        "on-click-right": "pavucontrol",
         "ignored-sinks": ["Easy Effects Sink"]
     },
+        "mpris": {
+        "format": "{player_icon} {status_icon} {title}",
+        "dynamic-order": ["title","artist"],
+        "format-paused": "{player_icon} {status_icon} {title}",
+        "player-icons": {
+        "default": "",
+        "mpv": "🎵",
+        "firefox": "󰈹 ",
+        "vlc": "󰕼 "
+
+    	},
+    	"status-icons": {
+        "playing": " ",
+    		"paused": " ",
+    		"stopped": " "
+    	}
+    },
     "hyprland/window": {
-        "format": "  {}",
-        "max-length": 50
+        "format": "  {initialTitle}",
+        "max-length": 20
     },
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -55,7 +72,7 @@
         //        }
     },
     "tray": {
-        "icon-size": 19,
+        "icon-size": 15,
         "spacing": 10
     }
 }

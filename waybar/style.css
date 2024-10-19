@@ -3,6 +3,7 @@
     border-radius: 10px;
     font-family: "FiraCode Nerd Font";
     font-size: 13px;
+    font-weight: bold;
     min-height: 0;
     padding: 1px;
 }
@@ -22,7 +23,7 @@
 }
 
 #workspaces button.active {
-  color: #d0cec8;
+  color: #6d8895;
   background-color: #2d3640;
 }
 
@@ -37,11 +38,22 @@
 #window,
 #network,
 #tray,
-#workspaces
+#workspaces,
+#mpris
 {
-  color: #97a5b5;
+  color: #6d8895;
   background: #0f1419; 
   padding: 0 10px;
   margin: 3px 3px 3px 3px;
   background-clip: padding-box;
 }
+
+#battery.warning { color: #ff8f40; }
+#battery.critical { color: #f07178; }
+#battery.full { color: #7e9350; }
+#battery.discharging { color: #e6b450; }
+#battery.charging { color: #1f6f88; }
+#clock{ color:#ac8476; }
+#window { color: #1f6f88; }
+#pulseaudio.muted { color: #f07178; }
+#pulseaudio.bluetooth { color: #1f6f88; }
