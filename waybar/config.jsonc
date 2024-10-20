@@ -20,7 +20,7 @@
             "warning": 30,
             "critical": 15
     },
-        "interval": 60
+        "interval": 5
     },
     "clock": {
         "format": "  {:%I:%M %p }",
@@ -30,7 +30,7 @@
     },
        "pulseaudio": {
         "format": "{icon} {volume}% ",
-        "format-bluetooth": " {icon} {volume}%",
+        "format-bluetooth": " {icon} {volume}% ",
         "format-muted": "󰝟 ",
         "format-icons": {
             "headphone": " ",
@@ -61,7 +61,7 @@
     	}
     },
     "hyprland/window": {
-        "format": "  {initialTitle}",
+        "format": "  {title}",
         "max-length": 20
     },
     "hyprland/workspaces": {
