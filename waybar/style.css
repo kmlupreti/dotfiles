@@ -49,11 +49,9 @@
 }
 
 #battery.warning { color: #ff8f40; }
-#battery.critical { color: #f07178; }
+#battery.critical { color: #ac8476; }
 #battery.full { color: #7e9350; }
 #battery.discharging { color: #e6b450; }
 #battery.charging { color: #1f6f88; }
-#clock{ color:#ac8476; }
-#window { color: #1f6f88; }
-#pulseaudio.muted { color: #f07178; }
+#pulseaudio.muted { color: #ac8476; }
 #pulseaudio.bluetooth { color: #1f6f88; }
