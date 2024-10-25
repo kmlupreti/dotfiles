@@ -7,13 +7,20 @@
 // from the command palette.
 [
   {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-p": null,
+      "ctrl-n": null
+    }
+  },
+  {
     "context": "Editor && vim_mode==insert",
     "bindings": {
       "j k": ["workspace::SendKeystrokes", "escape"]
     }
   },
   {
-    "context": "Editor && vim_mode==normal",
+    "context": "VimControl && !menu",
     "bindings": {
       // space commands
       "space s": "workspace::Save",
@@ -22,11 +29,7 @@
       "space t": "terminal_panel::ToggleFocus",
       "space e": "project_panel::ToggleFocus",
       "space c": "vim::ToggleComments",
-      "space space ": "pane::ActivateNextItem",
-
-      //g commands
-      "g h": "vim::FirstNonWhitespace",
-      "g l": "vim::EndOfLine"
+      "space space ": "pane::ActivateNextItem"
     }
   }
 ]
