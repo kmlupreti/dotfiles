@@ -1,4 +1,3 @@
 [manager]
 ratio = [2,3,4]
 show_symlink = false
-title_format   = "Yazi"  
