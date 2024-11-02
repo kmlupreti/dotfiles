@@ -10,7 +10,10 @@ normal = "block"
 select = "underline"
 
 [keys.normal] 
+K = "page_cursor_up"
+J = "page_cursor_down"
 X = ["extend_line_up", "extend_to_line_bounds"]
+C-c = ":config-open"
 
 [keys.normal.g]
 # select lines https://github.com/helix-editor/helix/issues/1630#issuecomment-1511995639
