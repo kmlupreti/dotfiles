@@ -1,4 +1,4 @@
-theme = "ayu_dark"
+theme = "base16_transparent"
 
 [editor]
 line-number = "relative"
@@ -13,7 +13,9 @@ select = "underline"
 K = "page_cursor_up"
 J = "page_cursor_down"
 X = ["extend_line_up", "extend_to_line_bounds"]
+C-q = ":quit"
 C-c = ":config-open"
+C-r = ":config-reload"
 
 [keys.normal.g]
 # select lines https://github.com/helix-editor/helix/issues/1630#issuecomment-1511995639
@@ -25,9 +27,8 @@ s = ["collapse_selection", "select_mode", "goto_first_nonwhitespace", "exit_sele
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [keys.normal."space"]
-f = "file_picker_in_current_buffer_directory"
+F = "file_picker_in_current_buffer_directory"
 q = ":buffer-close"
-e = ":quit"
 s = ":write"
 n = ":new"
 l = ":fmt" # lsp formatting
