@@ -5,22 +5,20 @@ set -x EDITOR helix
 set -x QT_QPA_PLATFORM "wayland;xcb"
 set -x QT_QPA_PLATFORMTHEME qt6ct
 
-# aliases
+# initial greeting message
+function fish_greeting
+    # don't show anyting for now
+end
 abbr -a l eza
 abbr -a ll 'eza -l'
 abbr -a lt 'eza -T'
 abbr -a pi 'paru -S'
 abbr -a pr 'paru -Rns'
-abbr -a yz yazi
-abbr -a hx helix
-
-# disable initial greeting
-set fish_greeting
 
 # ctrl+y to accept suggest autocomplete
-bind \cy accept-autosuggestion
+bind ctrl-y accept-autosuggestion
 
-# configs for interactiive session
+# configs for interactive session
 if status is-interactive
     # Start GUI at login
     if status --is-login
