@@ -1,3 +1,4 @@
+[general]
 # colorscheme
 import =  ["~/.config/alacritty/ayu_dark.toml"]
 
@@ -8,7 +9,7 @@ size = 11
 family = "FiraCode Nerd Font Mono"
 style = "Regular"
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/fish"
 
 [window.padding]
