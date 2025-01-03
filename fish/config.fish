@@ -23,7 +23,8 @@ if status is-interactive
     # Start GUI at login
     if status --is-login
         if test (tty) = /dev/tty1
-            start-cosmic &>/dev/null
+            # start-cosmic &>/dev/null
+            Hyprland &>/dev/null
         end
     end
 end
