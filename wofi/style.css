@@ -5,6 +5,7 @@
 
 window {
   margin: 0;
+  color: #b3b1ad;
   background: #0a0e14;
   border-radius: 10px;
   opacity: 0.90;
@@ -15,7 +16,6 @@ window {
 #input {
   margin: 5px;
   border: none;
-  color: #0a0e14;
 }
 
 #inner-box {
@@ -36,7 +36,6 @@ window {
 #text {
   margin: 8px;
   border: none;
-  color: #b3b1ad;
 }
 
 #entry:selected {
@@ -48,4 +47,3 @@ window {
 .entry {
   margin: 5px;
 }
-
