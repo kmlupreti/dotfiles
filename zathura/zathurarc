@@ -1,17 +1,17 @@
 # set options
-set default-bg "#1b1b1b"
+set default-bg "#0a0e14"
 set default-fg "#b3b1ad"
 
-set index-bg "#1b1b1b"
+set index-bg "#0a0e14"
 set index-fg "#b3b1ad"
 
-set index-active-bg "#474747"
+set index-active-bg "#1c2738"
 set index-active-fg "#b3b1ad"
 
 set inputbar-bg "#c7c7c7"
 set inputbar-fg "#01060e"
 
-set completion-bg "#1B1B1B"
+set completion-bg "#0a0e14"
 set completion-fg "#b3b1ad"
 
 set completion-highlight-bg "#1c2738"
@@ -23,6 +23,6 @@ set selection-notification false
 set adjust-open "width"
 
 # custom keymaps
+map <Space> toggle_index
 map i zoom in
 map o zoom out
-map O ":open" 
