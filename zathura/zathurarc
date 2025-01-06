@@ -21,6 +21,9 @@ set font "FiraCode Nerd Font normal 10"
 set guioptions none
 set selection-notification false
 set adjust-open "width"
+set show-recent 0
+set selection-clipboard "clipboard"
+set window-title-basename true
 
 # custom keymaps
 map <Space> toggle_index
