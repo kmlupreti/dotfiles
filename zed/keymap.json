@@ -1,10 +1,4 @@
 // Zed keymap
-//
-// For information on binding keys, see the Zed
-// documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
   {
     "context": "Terminal",
@@ -29,7 +23,9 @@
       "space t": "terminal_panel::ToggleFocus",
       "space e": "project_panel::ToggleFocus",
       "space c": "vim::ToggleComments",
-      "space space ": "pane::ActivateNextItem"
+      // g commands
+      "g n": "pane::ActivateNextItem",
+      "g p": "pane::ActivatePrevItem"
     }
   }
 ]
