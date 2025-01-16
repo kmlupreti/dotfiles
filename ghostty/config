@@ -1,2 +1,14 @@
+# gui options
+window-padding-x=8
+window-padding-y=8
 window-decoration = false
 theme = ayu
+background-opacity = 0.9
+
+# keybinds
+keybind = alt+q=close_window
+keybind = alt+t=new_tab
+keybind = alt+tab=next_tab
+keybind = alt+shift+tab=previous_tab
+keybind= alt+j=scroll_page_down
+keybind= alt+k=scroll_page_up
