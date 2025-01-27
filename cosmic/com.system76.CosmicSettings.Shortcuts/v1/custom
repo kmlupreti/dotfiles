@@ -3,9 +3,15 @@
         modifiers: [
             Super,
         ],
-        key: "Return",
-        description: Some("Ghostty terminal"),
-    ): Spawn("ghostty"),
+        key: "f",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "d",
+        description: Some("Documents"),
+    ): Spawn("zathura"),
     (
         modifiers: [
             Super,
@@ -18,25 +24,44 @@
         ],
         key: "End",
         description: Some("poweroff"),
-    ): Spawn("systemctl poweroff"),
+    ): Spawn("systemctl poweroff -i"),
     (
         modifiers: [
             Super,
         ],
-        key: "d",
-        description: Some("Documents"),
-    ): Spawn("zathura"),
+        key: "Delete",
+        description: Some("reboot"),
+    ): Spawn("systemctl reboot"),
+    (
+        modifiers: [
+            Alt,
+        ],
+        key: "j",
+    ): NextWorkspace,
+    (
+        modifiers: [
+            Alt,
+        ],
+        key: "k",
+    ): PreviousWorkspace,
     (
         modifiers: [
             Super,
         ],
-        key: "f",
-    ): Disable,
+        key: "Return",
+        description: Some("Ghostty terminal"),
+    ): Spawn("ghostty"),
     (
         modifiers: [
             Super,
         ],
         key: "c",
         description: Some("toggle focus music"),
-    ): Spawn("bash -c 'pkill mpv || mpv /media/backup/focus/*'"),
+    ): Spawn("bash -c \'pkill mpv || mpv /media/backup/focus/*\'"),
+    (
+        modifiers: [
+            Alt,
+        ],
+        key: "Tab",
+    ): Disable,
 }
