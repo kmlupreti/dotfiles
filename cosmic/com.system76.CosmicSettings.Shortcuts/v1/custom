@@ -1,0 +1,42 @@
+{
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "Return",
+        description: Some("Ghostty terminal"),
+    ): Spawn("ghostty"),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "e",
+    ): System(HomeFolder),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "End",
+        description: Some("poweroff"),
+    ): Spawn("systemctl poweroff"),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "d",
+        description: Some("Documents"),
+    ): Spawn("zathura"),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "f",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "c",
+        description: Some("toggle focus music"),
+    ): Spawn("bash -c 'pkill mpv || mpv /media/backup/focus/*'"),
+}
