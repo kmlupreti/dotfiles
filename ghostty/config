@@ -1,14 +1,41 @@
-# gui options
-window-padding-x=8
-window-padding-y=8
-window-decoration = false
-theme = ayu
-background-opacity = 0.9
+###################
+# options
+###################
 
+window-padding-x=2
+window-padding-y=2
+window-decoration = false
+theme = gruber-darker
+
+###################
 # keybinds
-keybind = alt+q=close_window
+###################
+
+# tabs related
 keybind = alt+t=new_tab
-keybind = alt+tab=next_tab
-keybind = alt+shift+tab=previous_tab
-keybind= alt+j=scroll_page_down
-keybind= alt+k=scroll_page_up
+keybind = alt+q=close_surface
+keybind = alt+n=next_tab
+keybind = alt+p=previous_tab
+
+# scrolling
+keybind = alt+shift+j=scroll_page_down
+keybind = alt+shift+k=scroll_page_up
+
+# create splits
+keybind = ctrl+shift+h=new_split:left
+keybind = ctrl+shift+l=new_split:right
+keybind = ctrl+shift+k=new_split:up
+keybind = ctrl+shift+j=new_split:down
+
+# move between splits
+keybind = alt+h=goto_split:left
+keybind = alt+l=goto_split:right
+keybind = alt+k=goto_split:up
+keybind = alt+j=goto_split:down
+
+# resize splits
+keybind = alt+ctrl+h=resize_split:left,10
+keybind = alt+ctrl+l=resize_split:right,10
+keybind = alt+ctrl+k=resize_split:up,10
+keybind = alt+ctrl+d=resize_split:down,10
+keybind = alt+f=toggle_split_zoom
