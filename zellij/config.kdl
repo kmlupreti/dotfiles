@@ -18,8 +18,6 @@ keybinds {
         //tab settings
         bind "Alt t" { NewTab; SwitchToMode "Normal"; }
         bind "Alt Q" { CloseTab; SwitchToMode "Normal"; }
-        bind "Alt H" { MoveTab "Left"; }
-        bind "Alt L" { MoveTab "Right"; }
         bind "Alt r" { SwitchToMode "RenameTab"; TabNameInput 0; }
         bind "Alt 1" { GoToTab 1; SwitchToMode "Normal"; }
         bind "Alt 2" { GoToTab 2; SwitchToMode "Normal"; }
@@ -39,10 +37,7 @@ keybinds {
     }
 }
 
-plugins {
-    tab-bar location="zellij:tab-bar"
-    compact-bar location="zellij:compact-bar"
-}
-
 // options
-theme "nord"
+theme "vesper"
+session_name "main"
+attach_to_session true
