@@ -20,12 +20,6 @@ K = "page_cursor_up"
 J = "page_cursor_down"
 X = ["extend_line_up", "extend_to_line_bounds"]
 C-q = ":quit"
-
-[keys.normal.g]
-# select lines https://github.com/helix-editor/helix/issues/1630#issuecomment-1511995639
-L = ["collapse_selection", "extend_to_line_end"]
-H = ["collapse_selection", "extend_to_line_start"]
-S = ["collapse_selection", "select_mode", "goto_first_nonwhitespace", "exit_select_mode"]
   
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
