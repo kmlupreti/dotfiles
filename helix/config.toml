@@ -1,4 +1,4 @@
-theme = "ayu_dark"
+theme = "flexoki_dark"
 
 [editor]
 line-number = "relative"
@@ -20,9 +20,6 @@ K = "page_cursor_up"
 J = "page_cursor_down"
 X = ["extend_line_up", "extend_to_line_bounds"]
 C-q = ":quit"
-C-x = ":config-open"
-C-r = ":config-reload"
-C-t = ":sh alacritty"
 
 [keys.normal.g]
 # select lines https://github.com/helix-editor/helix/issues/1630#issuecomment-1511995639
@@ -34,9 +31,10 @@ S = ["collapse_selection", "select_mode", "goto_first_nonwhitespace", "exit_sele
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [keys.normal."space"]
+x = ":config-open"
+r = ":config-reload"
 F = "file_picker_in_current_buffer_directory"
-q = ":buffer-close"
 s = ":write"
 n = ":new"
-l = ":fmt" # manual lsp formatting
- 
+l = ":fmt"
+q = ":buffer-close"
