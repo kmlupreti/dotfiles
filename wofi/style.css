@@ -1,16 +1,9 @@
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 0.90; }
-}
-
 window {
   margin: 0;
   color: #b3b1ad;
   background: #0a0e14;
-  border-radius: 10px;
-  opacity: 0.90;
-  animation-name: fadeIn;
-  animation-duration: 0.25s;
+  border-radius: 0px;
+  opacity: 1;
 }
 
 #input {
