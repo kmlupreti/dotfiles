@@ -19,28 +19,14 @@ abbr -a pi 'paru -S'
 abbr -a pr 'paru -Rns'
 
 # ctrl+y to accept suggest autocomplete
-# bind ctrl-y accept-autosuggestion
-bind \cy accept-autosuggestion
+bind ctrl-y accept-autosuggestion
 
 # configs for interactive session
 if status is-interactive
     # Start GUI at login
     if status --is-login
         if test (tty) = /dev/tty1
-            start-cosmic &>/dev/null
-        end
-    end
-
-    #setup zellij    
-    if not set -q ZELLIJ
-        if test "$ZELLIJ_AUTO_ATTACH" = true
-            zellij attach -c
-        else
-            zellij
-        end
-
-        if test "$ZELLIJ_AUTO_EXIT" = true
-            kill $fish_pid
+            Hyprland &>/dev/null
         end
     end
 end
