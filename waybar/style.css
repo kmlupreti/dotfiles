@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 10px;
-    font-family: "FiraCode Nerd Font";
+    font-family: "Noto Sans";
     font-size: 13px;
     font-weight: bold;
     min-height: 0;
@@ -49,9 +49,9 @@
 }
 
 #battery.warning { color: #ff8f40; }
-#battery.critical { color: #ac8476; }
+#battery.critical { color: #a85361 ; }
 #battery.full { color: #7e9350; }
 #battery.discharging { color: #e6b450; }
 #battery.charging { color: #1f6f88; }
-#pulseaudio.muted { color: #ac8476; }
+#pulseaudio.muted { color: #a85361; }
 #pulseaudio.bluetooth { color: #1f6f88; }
