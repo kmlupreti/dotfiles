@@ -9,6 +9,7 @@
     ],
     "modules-right": [
         "mpris",
+        "network",
         "pulseaudio",
         "battery",
         "tray"
@@ -23,15 +24,15 @@
         "interval": 5
     },
     "clock": {
-        "format": "  {:%I:%M %p }",
-        "format-alt": "  {:%I:%M %p     %Y-%m-%d %A}",
+        "format": "  {:%I:%M %p     %Y-%m-%d %A}",
+        "format-alt": "  {:%I:%M %p }",
         "interval": 1,
         "tooltip": false
     },
        "pulseaudio": {
         "format": "{icon} {volume}% ",
         "format-bluetooth": " {icon} {volume}% ",
-        "format-muted": "󰝟 ",
+        "format-muted": "   ",
         "format-icons": {
             "headphone": " ",
             "headset": " ",
@@ -43,7 +44,16 @@
         "on-click-right": "pavucontrol",
         "ignored-sinks": ["Easy Effects Sink"]
     },
-        "mpris": {
+    "network": {
+        "format-wifi": "  ",
+        "format-ethernet": " 󰈀 ",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "max-length": 50,
+        "interval": 10
+    },
+    "mpris": {
         "dynamic-order": ["title","artist"],
         "format": "{player_icon} {status_icon} {dynamic} ",
         "format-paused": "{player_icon} {status_icon} {dynamic} ",
