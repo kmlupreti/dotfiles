@@ -2,9 +2,6 @@
 set -x VISUAL helix
 set -x EDITOR helix
 
-set -x QT_QPA_PLATFORM "wayland;xcb"
-set -x QT_QPA_PLATFORMTHEME qt6ct
-
 # initial greeting message
 function fish_greeting
     # don't show anyting for now
