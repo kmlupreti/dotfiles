@@ -9,8 +9,8 @@
     ],
     "modules-right": [
         "tray",
-        "network#1",
-        "network#2",
+        // "network#1",
+        // "network#2",
         "pulseaudio",
         "battery",
         "clock",
@@ -46,9 +46,12 @@
     },
     "network#1": {
         "interface": "wlp1s0",
-        "format-wifi": "   ",
+        "format-wifi": "{icon}",
+        "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
         "tooltip-format-wifi": "{essid} ({signalStrength}%) {ipaddr} ",
-        "format-disconnected": "",
+        "format-disconnected": " 󰤮 ",
+        "on-click":"~/.local/scripts/wifi-toggle.sh",
+        "on-click-right": "nm-connection-editor",
         "max-length": 10,
         "interval": 5
     },
@@ -56,6 +59,7 @@
         "interface": "enp2s0",
         "format-ethernet": " 󰈀 ",
         "tooltip-format-ethernet": "{ifname} {ipaddr}",
+        "on-click-right": "nm-connection-editor",
         "format-disconnected": "",
         "max-length": 10,
         "interval": 5
