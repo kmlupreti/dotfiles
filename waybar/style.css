@@ -2,8 +2,8 @@
     border: none;
     border-radius: 10px;
     font-family: "Noto Sans";
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: normal;
     min-height: 0;
     padding: 1px;
 }
@@ -55,3 +55,7 @@
 #battery.charging { color: #1f6f88; }
 #pulseaudio.muted { color: #a85361; }
 #pulseaudio.bluetooth { color: #1f6f88; }
+
+window#waybar.empty #window {
+    background-color: transparent;
+}

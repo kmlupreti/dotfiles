@@ -5,14 +5,15 @@
         "hyprland/window"
     ],
     "modules-center": [
-        "clock"
+        "mpris",
     ],
     "modules-right": [
-        "mpris",
-        "network",
+        "tray",
+        "network#1",
+        "network#2",
         "pulseaudio",
         "battery",
-        "tray"
+        "clock",
     ],
     "battery": {
         "format": "{icon} {capacity}% ",
@@ -24,19 +25,18 @@
         "interval": 5
     },
     "clock": {
-        "format": "  {:%I:%M %p     %Y-%m-%d %A}",
-        "format-alt": "  {:%I:%M %p }",
+        "format": "  {:%I:%M %p }",
+        "tooltip-format": "   {:%Y-%m-%d %A}",
         "interval": 1,
-        "tooltip": false
     },
        "pulseaudio": {
         "format": "{icon} {volume}% ",
         "format-bluetooth": " {icon} {volume}% ",
         "format-muted": "   ",
         "format-icons": {
-            "headphone": " ",
-            "headset": " ",
-            "default": [" "," ", " "]
+            "headphone": "  ",
+            "headset": "  ",
+            "default": ["  ","  ", "  "]
         },
         "tooltip": false,
         "scroll-step": 1,
@@ -44,17 +44,27 @@
         "on-click-right": "pavucontrol",
         "ignored-sinks": ["Easy Effects Sink"]
     },
-    "network": {
-        "format-wifi": "  ",
+    "network#1": {
+        "interface": "wlp1s0",
+        "format-wifi": "   ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) {ipaddr} ",
+        "format-disconnected": "",
+        "max-length": 10,
+        "interval": 5
+    },
+    "network#2": {
+        "interface": "enp2s0",
         "format-ethernet": " 󰈀 ",
-        "format-disconnected": "", //An empty format will hide the module.
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
-        "tooltip-format-ethernet": "{ifname} ",
-        "max-length": 50,
-        "interval": 10
+        "tooltip-format-ethernet": "{ifname} {ipaddr}",
+        "format-disconnected": "",
+        "max-length": 10,
+        "interval": 5
     },
     "mpris": {
         "dynamic-order": ["title","artist"],
+        // "dynamic-importance-order" : ["artist","title"],
+        // "dynamic-len": 30,
+        "interval": 1,
         "format": "{player_icon} {status_icon} {dynamic} ",
         "format-paused": "{player_icon} {status_icon} {dynamic} ",
         "player-icons": {
@@ -65,13 +75,14 @@
 
     	},
     	"status-icons": {
-        "playing": " ",
-    		"paused": " ",
-    		"stopped": " "
+        "playing": "   ",
+    		"paused": "   ",
+    		"stopped": "   "
     	}
     },
     "hyprland/window": {
-        "format": "  {title}",
+        "format": "{title}",
+        "icon": true,
         "max-length": 20
     },
     "hyprland/workspaces": {
