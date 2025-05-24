@@ -2,14 +2,14 @@
     border: none;
     border-radius: 5px;
     font-family: "Noto Sans";
-    font-size: 12px;
+    font-size: 11px;
     min-height: 0;
     padding: 1px;
 }
 
-/* #waybar { */
+#waybar {
       /* background: transparent; */
-/* } */
+}
 
 #workspaces button {
   font-weight: bold;
@@ -41,6 +41,7 @@
 #workspaces,
 #mpris
 {
+  font-weight: 500;
   color: #6d8895;
   background: #0f1419; 
   padding: 0 10px;
