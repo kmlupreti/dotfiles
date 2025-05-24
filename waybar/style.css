@@ -1,35 +1,35 @@
 * {
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-family: "Noto Sans";
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 12px;
     min-height: 0;
     padding: 1px;
 }
 
-#waybar {
-      background: transparent;
-}
+/* #waybar { */
+      /* background: transparent; */
+/* } */
 
 #workspaces button {
+  font-weight: bold;
   margin: 2px 4px ;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 #workspaces button:hover {
-  color: #131721;
-  background-color: #131721;
+  color: #0f1419;
+  background-color: #6d8895;
 }
 
 #workspaces button.active {
-  color: #6d8895;
-  background-color: #2d3640;
+  color: #0f1419;
+  background-color: #e6b450;
 }
 
 #workspaces button.urgent {
-  color: #2d3640;
-  background-color: #e6b450;
+  color: #0f1419;
+  background-color: #a85361 ;
 }
 
 #battery,
@@ -48,11 +48,11 @@
   background-clip: padding-box;
 }
 
-#battery.warning { color: #ff8f40; }
+#battery.warning { color: #e6b450; }
 #battery.critical { color: #a85361 ; }
-#battery.full { color: #7e9350; }
-#battery.discharging { color: #e6b450; }
-#battery.charging { color: #1f6f88; }
+/* #battery.full { color: #7e9350; } */
+#battery.discharging { color: #6d8890; }
+/* #battery.charging { color: #1f6f88; } */
 #pulseaudio.muted { color: #a85361; }
 #pulseaudio.bluetooth { color: #1f6f88; }
 

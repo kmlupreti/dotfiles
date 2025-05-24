@@ -9,15 +9,15 @@
     ],
     "modules-right": [
         "tray",
-        // "network#1",
-        // "network#2",
         "pulseaudio",
         "battery",
         "clock",
     ],
     "battery": {
-        "format": "{icon} {capacity}% ",
-        "format-icons": [" ", " ", " ", " ", " "],
+        "format": "{icon}  {capacity}% ",
+        "format-charging": "󰂄  {capacity}%",
+        "format-full": "󰁹  {capacity}%",
+        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂"],
          "states": {
             "warning": 30,
             "critical": 15
@@ -44,33 +44,13 @@
         "on-click-right": "pavucontrol",
         "ignored-sinks": ["Easy Effects Sink"]
     },
-    "network#1": {
-        "interface": "wlp1s0",
-        "format-wifi": "{icon}",
-        "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
-        "tooltip-format-wifi": "{essid} ({signalStrength}%) {ipaddr} ",
-        "format-disconnected": " 󰤮 ",
-        "on-click":"~/.local/scripts/wifi-toggle.sh",
-        "on-click-right": "nm-connection-editor",
-        "max-length": 10,
-        "interval": 5
-    },
-    "network#2": {
-        "interface": "enp2s0",
-        "format-ethernet": " 󰈀 ",
-        "tooltip-format-ethernet": "{ifname} {ipaddr}",
-        "on-click-right": "nm-connection-editor",
-        "format-disconnected": "",
-        "max-length": 10,
-        "interval": 5
-    },
     "mpris": {
-        "dynamic-order": ["title","artist"],
+        // "dynamic-order": ["title","artist"],
         // "dynamic-importance-order" : ["artist","title"],
         // "dynamic-len": 30,
         "interval": 1,
-        "format": "{player_icon} {status_icon} {dynamic} ",
-        "format-paused": "{player_icon} {status_icon} {dynamic} ",
+        "format": "{player_icon}  {title} ",
+        // "format-paused": "{player_icon} {status_icon} {dynamic} ",
         "player-icons": {
         "default": " ",
         "mpv": " ",
@@ -78,11 +58,11 @@
         "vlc": "󰕼 "
 
     	},
-    	"status-icons": {
-        "playing": "   ",
-    		"paused": "   ",
-    		"stopped": "   "
-    	}
+    	// "status-icons": {
+     //    "playing": "   ",
+    	// 	"paused": "   ",
+    	// 	"stopped": "   "
+    	// }
     },
     "hyprland/window": {
         "format": "{title}",
