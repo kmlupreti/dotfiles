@@ -10,7 +10,7 @@ binds {
     Mod+B { spawn "firefox"; }
     Mod+E { spawn "nemo"; }
 
-    Mod+End { spawn "systemctl" "poweroff"; }
+    // Mod+End { spawn "systemctl" "poweroff"; }
     Mod+Delete { spawn "systemctl" "reboot"; }
 
     // media keys
@@ -52,7 +52,7 @@ binds {
     // Mod+Ctrl+K     { move-window-up-or-to-workspace-up; }
 
     Mod+Home { focus-column-first; }
-    Mod+End  { focus-column-last; }
+    // Mod+End  { focus-column-last; }
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+End  { move-column-to-last; }
 
