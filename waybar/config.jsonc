@@ -1,8 +1,8 @@
 {
     "output": "eDP-1",
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
+        "river/tags",
+        "river/window"
     ],
     "modules-center": [
         "mpris",
@@ -64,17 +64,8 @@
     	// 	"stopped": "   "
     	// }
     },
-    "hyprland/window": {
-        "format": "{title}",
-        "icon": true,
-        "max-length": 20
-    },
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "format": "{name}",
-        // "persistent-workspaces": {
-        //              "*": 4, 
-        //        }
+    "river/tags":{
+        "num-tags": 4,
     },
     "tray": {
         "icon-size": 15,
