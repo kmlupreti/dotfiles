@@ -1,8 +1,8 @@
 {
     "output": "eDP-1",
     "modules-left": [
-        "river/tags",
-        "river/window"
+        "niri/workspaces",
+        "niri/window"
     ],
     "modules-center": [
         "mpris",
@@ -64,8 +64,13 @@
     	// 	"stopped": "   "
     	// }
     },
-    "river/tags":{
-        "num-tags": 4,
+    "niri/window": {
+        "format": "{title}",
+        "icon": true,
+        "max-length": 20
+    },
+    "niri/workspaces":{
+        "format": "{value}",
     },
     "tray": {
         "icon-size": 15,
