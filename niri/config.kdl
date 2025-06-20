@@ -11,6 +11,7 @@ environment {
     DISPLAY ":0"
     QT_QPA_PLATFORMTHEME "qt6ct"
     QT_QPA_PLATFORM "wayland;xcb"
+    EDITOR "hx"
 }
 
 // keybinds
@@ -23,6 +24,7 @@ binds {
     Mod+M { spawn "wofi"; }
     Mod+B { spawn "firefox"; }
     Mod+D { spawn "zathura"; }
+    Mod+C { spawn "bash" "-c" "pkill vlc || cvlc /media/backup/focus/*"; }
 
     // power
     Mod+End { spawn "systemctl" "poweroff"; }
@@ -80,7 +82,6 @@ binds {
     // maximize
     Mod+Shift+F { maximize-column; }
     Mod+F { fullscreen-window; }
-    Mod+C { center-column; }
 
     // adjust width of a column(window)
     Mod+Minus { set-column-width "-10%"; }
