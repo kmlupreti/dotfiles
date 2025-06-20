@@ -8,10 +8,10 @@
         "mpris",
     ],
     "modules-right": [
-        "tray",
         "pulseaudio",
         "battery",
         "clock",
+        "tray",
     ],
     "battery": {
         "format": "{icon}  {capacity}% ",
