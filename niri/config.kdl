@@ -1,4 +1,19 @@
-// niri compositor config 
+//startup programs
+spawn-at-startup "mako" // notification daemon
+spawn-at-startup "waybar" // waybar
+spawn-at-startup "dex" "-a" // start autostart programs at /etc/xdg/autostart
+spawn-at-startup  "bash" "-c" "~/.local/scripts/wallpaper.sh" //set wallpaper
+spawn-at-startup  "bash" "-c" "gammastep -O 4500" // turn on night light
+spawn-at-startup "xwayland-satellite" // xwayland server
+
+// environment variables 
+environment {
+    DISPLAY ":0"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_QPA_PLATFORM "wayland;xcb"
+}
+
+// keybinds
 binds {
     // shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
@@ -83,13 +98,6 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 }
 
-//startup programs
-spawn-at-startup "mako" // notification daemon
-spawn-at-startup "waybar" // waybar
-spawn-at-startup "dex" "-a" // start autostart programs at /etc/xdg/autostart
-spawn-at-startup  "bash" "-c" "~/.local/scripts/wallpaper.sh" //set wallpaper
-spawn-at-startup  "bash" "-c" "gammastep -O 4500" // turn on night light
-
 // input settings
 input {
     keyboard {
@@ -128,4 +136,3 @@ hotkey-overlay {
     // disable hotkey info popup at startup
     skip-at-startup
 }
-
