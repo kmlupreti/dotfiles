@@ -2,6 +2,7 @@
 > This repo contains dotfiles ( or configs) of various programs and tools that I use in Linux.
 
 ## screenshots
-![yazi](images/yazi.png)
-![menu](images/wofi.png)
-![fetch](images/helix.png)
+![](screenshots/1.png)
+![](screenshots/2.png)
+![](screenshots/3.png)
+![](screenshots/4.png)
