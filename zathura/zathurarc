@@ -1,30 +1,60 @@
-# set options
+# set default colors
 set default-bg "#0a0e14"
 set default-fg "#b3b1ad"
 
+# set colors of toc(table of contents)
 set index-bg "#0a0e14"
 set index-fg "#b3b1ad"
 
+# set colors of active item in toc
 set index-active-bg "#1c2738"
 set index-active-fg "#b3b1ad"
 
+# set colors in inputbar
 set inputbar-bg "#c7c7c7"
 set inputbar-fg "#01060e"
 
+# set colors of completion
 set completion-bg "#0a0e14"
 set completion-fg "#b3b1ad"
 
+# set colors of active completion
 set completion-highlight-bg "#1c2738"
 set completion-highlight-fg "#b3b1ad"
 
+# set colors while on dark mode
+set recolor-darkcolor "#0f1419"
+set recolor-lightcolor "#b3b1ad"
+
+# set font
 set font "Noto Sans 10"
+
+# hide gui 
 set guioptions none
+
+# choose clipboard
 set selection-clipboard "clipboard"
+
+# don't show selected text
 set selection-notification false
+
+# adjust view to fit width of the page
 set adjust-open "width"
+
+# don't show recent items in completion
 set show-recent 0
 
-# custom keymaps
-map i zoom in
-map o zoom out
-map O ":open"
+# don't show full path of the file in window title
+set window-title-basename true
+
+# set dark mode on
+set recolor true
+
+# don't press shift to zoom in 
+map = zoom in
+
+# open a file
+map o ":open"
+
+# unmapped becoz when its pressed accidentally it splits the pages without knowing and pages might be skipped while reading
+unmap d
