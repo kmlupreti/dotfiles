@@ -23,8 +23,9 @@ set completion-highlight-bg "#1c2738"
 set completion-highlight-fg "#b3b1ad"
 
 # set colors while on dark mode
-set recolor-darkcolor "#0f1419"
-set recolor-lightcolor "#b3b1ad"
+set recolor-lightcolor "#0a0e14" # bg color
+set recolor-darkcolor "#e0e0e0"  # text color
+set recolor-keephue "true"       # preserve original colors
 
 # set font
 set font "Noto Sans 10"
