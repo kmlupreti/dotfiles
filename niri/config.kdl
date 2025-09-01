@@ -1,6 +1,8 @@
 //startup programs
-spawn-at-startup "mako" // notification daemon
 spawn-at-startup "waybar" // waybar
+spawn-at-startup "mako" // notification daemon
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" // polkit agent
+spawn-at-startup "hypridle" // idle inhibitor 
 spawn-at-startup "dex" "-a" // start autostart programs at /etc/xdg/autostart
 spawn-at-startup  "bash" "-c" "~/.local/scripts/wallpaper.sh" //set wallpaper
 spawn-at-startup  "bash" "-c" "gammastep -O 4500" // turn on night light
@@ -24,7 +26,7 @@ binds {
     Mod+M { spawn "wofi"; }
     Mod+B { spawn "firefox"; }
     Mod+D { spawn "zathura"; }
-    Mod+C { spawn "bash" "-c" "pkill vlc || cvlc /media/backup/focus/*"; }
+    Mod+C { spawn "bash" "-c" "pkill mpv || mpv /media/backup/focus/"; }
 
     // power
     Mod+End { spawn "systemctl" "poweroff"; }
@@ -96,9 +98,15 @@ binds {
     Mod+Escape { quit; }
 
     // turn off monitors
-    Mod+Shift+P { power-off-monitors; }
+    Mod+X { power-off-monitors; }
 }
 
+// handle lid switch events
+switch-events {
+    lid-close { spawn "niri" "msg" "output" "eDP-1" "off"; }
+    lid-open { spawn "niri" "msg" "output" "eDP-1" "on"; }
+    }
+    
 // input settings
 input {
     keyboard {
@@ -125,6 +133,12 @@ layout {
     }
     default-column-width { proportion 1.0; }
     gaps 0
+}
+
+// window rules
+window-rule {
+    geometry-corner-radius 0
+    clip-to-geometry true
 }
 
 // disable client side decorations
