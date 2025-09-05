@@ -34,10 +34,18 @@ keybinds {
         bind "Alt K" { PageScrollUp; }
         bind "Alt H" { ScrollToTop; SwitchToMode "Normal"; }
         bind "Alt L" { ScrollToBottom; SwitchToMode "Normal"; }
+     }
+
+}
+
+ui {
+    pane_frames {
+        hide_session_name true
     }
 }
 
 // options
-theme "vesper"
-session_name "main"
-attach_to_session true
+theme "ayu_dark"
+show_startup_tips false
+pane_frames false
+on_force_close "quit"
