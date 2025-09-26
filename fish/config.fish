@@ -8,7 +8,7 @@ if status is-interactive
     # Start GUI at login
     if status --is-login
         if test (tty) = /dev/tty1
-            niri &>/dev/null
+            Hyprland &>/dev/null
         end
     end
 
@@ -34,5 +34,5 @@ if status is-interactive
     end
 
     # zellij setup
-    eval (zellij setup --generate-auto-start fish | string collect)
+    # eval (zellij setup --generate-auto-start fish | string collect)
 end

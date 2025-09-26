@@ -1,8 +1,8 @@
 {
     "output": "eDP-1",
     "modules-left": [
-        "niri/workspaces",
-        "niri/window"
+        "hyprland/workspaces",
+        "hyprland/window"
     ],
     "modules-center": [
         "mpris",
@@ -64,13 +64,17 @@
     	// 	"stopped": "   "
     	// }
     },
-    "niri/window": {
+     "hyprland/window": {
         "format": "{title}",
         "icon": true,
         "max-length": 20
     },
-    "niri/workspaces":{
-        "format": "{value}",
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "format": "{name}",
+        // "persistent-workspaces": {
+        //              "*": 4, 
+        //        }
     },
     "tray": {
         "icon-size": 15,
