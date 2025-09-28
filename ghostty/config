@@ -2,7 +2,7 @@
 # options
 ###################
 
-theme = ayu
+theme = Ayu
 window-theme = ghostty
 window-padding-x=5
 window-padding-y=2
