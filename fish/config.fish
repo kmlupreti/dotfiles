@@ -5,13 +5,6 @@ end
 
 # configs for interactive session
 if status is-interactive
-    # Start GUI at login
-    if status --is-login
-        if test (tty) = /dev/tty1
-            Hyprland &>/dev/null
-        end
-    end
-
     # aliases
     abbr -a l eza
     abbr -a ll 'eza -l'
@@ -32,7 +25,4 @@ if status is-interactive
         end
         rm -f -- "$tmp"
     end
-
-    # zellij setup
-    # eval (zellij setup --generate-auto-start fish | string collect)
 end
