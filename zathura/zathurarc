@@ -49,7 +49,7 @@ set show-recent 0
 set window-title-basename true
 
 # set dark mode on
-set recolor true
+ map d recolor 
 
 # don't press shift to zoom in 
 map = zoom in
@@ -57,5 +57,5 @@ map = zoom in
 # open a file
 map o ":open"
 
-# unmapped becoz when its pressed accidentally it splits the pages without knowing and pages might be skipped while reading
-unmap d
+# file chooser
+map e file_chooser
