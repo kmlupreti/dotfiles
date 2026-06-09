@@ -1,14 +1,13 @@
 {
     "output": "eDP-1",
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
-    ],
+        "niri/workspaces",
+        "niri/window"    ],
     "modules-center": [
         "mpris",
     ],
     "modules-right": [
-        "pulseaudio",
+        "wireplumber",
         "battery",
         "clock",
         "tray",
@@ -29,22 +28,15 @@
         "tooltip-format": "   {:%Y-%m-%d %A}",
         "interval": 1,
     },
-       "pulseaudio": {
-        "format": "{icon} {volume}% ",
-        "format-bluetooth": " {icon} {volume}% ",
-        "format-muted": "   ",
-        "format-icons": {
-            "headphone": "  ",
-            "headset": "  ",
-            "default": ["  ","  ", "  "]
-        },
-        "tooltip": false,
-        "scroll-step": 1,
-        "on-click":"~/.local/scripts/volume.sh --mute",
-        "on-click-right": "pavucontrol",
-        "ignored-sinks": ["Easy Effects Sink"]
-    },
-    "mpris": {
+"wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-muted": " ",
+    "on-click": "pavucontrol",
+    "format-icons": ["  ","  ", "  "],
+    "max-volume": 150,
+    "scroll-step": 0.2
+},
+"mpris": {
         // "dynamic-order": ["title","artist"],
         // "dynamic-importance-order" : ["artist","title"],
         // "dynamic-len": 30,
@@ -64,14 +56,14 @@
     	// 	"stopped": "   "
     	// }
     },
-     "hyprland/window": {
+     "niri/window": {
         "format": "{title}",
         "icon": true,
         "max-length": 20
     },
-    "hyprland/workspaces": {
+    "niri/workspaces": {
         "disable-scroll": true,
-        "format": "{name}",
+        "format": "{value}",
         // "persistent-workspaces": {
         //              "*": 4, 
         //        }

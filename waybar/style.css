@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0px;
-    font-family: "Noto Sans";
+    font-family: "JetBrainsMono Nerd Font";
     font-size: 10px;
     font-weight: bold;
     min-height: 0;
@@ -9,7 +9,7 @@
 }
 
 #waybar {
-      /* background: transparent; */
+      background: transparent;
 }
 
 #workspaces button {
@@ -34,7 +34,7 @@
 
 #battery,
 #clock,
-#pulseaudio,
+#wireplumber,
 #window,
 #network,
 #tray,
