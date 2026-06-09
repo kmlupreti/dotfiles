@@ -22,21 +22,22 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // common programs
-    Mod+Return { spawn "ghostty"; }
+    Mod+Return { spawn "alacritty"; }
     Mod+M { spawn "wofi"; }
     Mod+B { spawn "firefox"; }
     Mod+D { spawn "zathura"; }
-    Mod+C { spawn "bash" "-c" "pkill mpv || mpv /media/backup/focus/"; }
+    Mod+C { spawn "bash" "-c" "pkill vlc || cvlc ~/focus/"; }
 
     // power
     Mod+End { spawn "systemctl" "poweroff"; }
     Mod+Delete { spawn "systemctl" "reboot"; }
 
     // media keys
-    XF86AudioRaiseVolume  { spawn "bash" "-c" "~/.local/scripts/volume.sh --up"; }
-    XF86AudioLowerVolume  { spawn "bash" "-c" "~/.local/scripts/volume.sh --down"; }
-    XF86MonBrightnessUp   { spawn "bash" "-c" "~/.local/scripts/light.sh --up"; }
-    XF86MonBrightnessDown { spawn "bash" "-c" "~/.local/scripts/light.sh --down"; }
+    XF86AudioRaiseVolume  { spawn "bash" "-c" "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"; }
+    XF86AudioLowerVolume  { spawn "bash" "-c" "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"; }
+    XF86AudioMute { spawn "bash" "-c" "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86MonBrightnessUp   { spawn "bash" "-c" "brightnessctl set 10%+"; }
+    XF86MonBrightnessDown { spawn "bash" "-c" "brightnessctl set 10%-"; }
     XF86AudioPlay  { spawn "playerctl" "play-pause";} 
     XF86AudioPrev  { spawn "playerctl" "previous";} 
     XF86AudioNext  { spawn "playerctl" "next";} 
@@ -120,7 +121,7 @@ input {
 
 // output settings
 output "eDP-1" {
-    mode "1366x768"
+    mode "1920x1080"
 }
 
 // layout settings
