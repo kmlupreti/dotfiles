@@ -13,9 +13,9 @@
         "tray",
     ],
     "battery": {
-        "format": "{icon}  {capacity}% ",
-        "format-charging": "󰂄  {capacity}%",
-        "format-full": "󰁹  {capacity}%",
+        "format": "{icon} {capacity}% ",
+        "format-charging": "󰂄 {capacity}%",
+        "format-full": "󰁹 {capacity}%",
         "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂"],
          "states": {
             "warning": 30,
@@ -59,7 +59,7 @@
      "niri/window": {
         "format": "{title}",
         "icon": true,
-        "max-length": 20
+        "max-length": 50
     },
     "niri/workspaces": {
         "disable-scroll": true,

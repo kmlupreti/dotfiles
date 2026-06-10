@@ -1,11 +1,11 @@
 * {
     border: none;
-    border-radius: 0px;
+    border-radius: 4px;
     font-family: "JetBrainsMono Nerd Font";
     font-size: 10px;
-    font-weight: bold;
+    /* font-weight: bold; */
     min-height: 0;
-    padding: 1px;
+    padding: 2px;
 }
 
 #waybar {
@@ -13,8 +13,8 @@
 }
 
 #workspaces button {
-  margin: 2px 4px ;
-  border-radius: 2px;
+  margin: 4px;
+  border-radius: 4px;
 }
 
 #workspaces button:hover {
