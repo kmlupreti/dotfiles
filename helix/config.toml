@@ -2,7 +2,7 @@ theme = "ayu_dark"
 
 [editor]
 line-number = "relative"
-mouse = false
+mouse = true
 color-modes = true
 bufferline = "multiple"
 
@@ -23,15 +23,21 @@ K = "page_cursor_up"
 J = "page_cursor_down"
 X = ["extend_line_up", "extend_to_line_bounds"]
 C-q = ":quit"
-  
+A-t = [":sh alacritty --working-directory %sh{dirname %{buffer_name}}"]
+
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [keys.normal."space"]
-x = ":config-open"
-r = ":config-reload"
 F = "file_picker_in_current_buffer_directory"
-s = ":write"
+w = ":write"
 n = ":new"
 l = ":fmt"
 q = ":buffer-close"
+# e = [
+#   ':sh rm -f /tmp/unique-file',
+#   ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-file',
+#   ':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+#   ':open %sh{cat /tmp/unique-file}',
+#   ':redraw',
+# ]
