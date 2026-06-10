@@ -4,12 +4,13 @@
         "niri/workspaces",
         "niri/window"    ],
     "modules-center": [
-        "mpris",
+        "clock",
     ],
     "modules-right": [
+        "mpris",
+        "network",
         "wireplumber",
         "battery",
-        "clock",
         "tray",
     ],
     "battery": {
@@ -24,7 +25,7 @@
         "interval": 5
     },
     "clock": {
-        "format": "  {:%I:%M %p }",
+        "format": "  {:%I:%M %p %A}",
         "tooltip-format": "   {:%Y-%m-%d %A}",
         "interval": 1,
     },
@@ -43,6 +44,7 @@
         "interval": 1,
         "format": "{player_icon}  {title} ",
         // "format-paused": "{player_icon} {status_icon} {dynamic} ",
+        "title-len": 20,
         "player-icons": {
         "default": " ",
         "mpv": " ",
@@ -56,6 +58,19 @@
     	// 	"stopped": "   "
     	// }
     },
+ "network": {
+     // "interface": "wlp2s0",
+     "format": "{ifname}",
+     "format-wifi": "   {essid} ({signalStrength}%)  ",
+     "format-ethernet": "󰈀 󰜷 {bandwidthUpBits} 󰜮 {bandwidthDownBits}",
+     "format-disconnected": "", //An empty format will hide the module.
+     "tooltip-format": "{ifname}",
+     "tooltip-format-wifi": "  {essid} ({signalStrength}%)  ",
+     "tooltip-format-ethernet": "󰈁 {ifname} ",
+     "tooltip-format-disconnected": "Disconnected",
+     "max-length": 50,
+     "interval": 10,
+},
      "niri/window": {
         "format": "{title}",
         "icon": true,
