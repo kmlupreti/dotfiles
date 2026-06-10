@@ -13,7 +13,7 @@ environment {
     DISPLAY ":0"
     QT_QPA_PLATFORMTHEME "qt6ct"
     QT_QPA_PLATFORM "wayland;xcb"
-    EDITOR "hx"
+    EDITOR "helix"
 }
 
 // keybinds
@@ -24,9 +24,10 @@ binds {
     // common programs
     Mod+Return { spawn "alacritty"; }
     Mod+M { spawn "wofi"; }
+    Mod+E { spawn "bash" "-c" "alacritty --title Helix --class helix -e helix"; }
     Mod+B { spawn "firefox"; }
     Mod+D { spawn "zathura"; }
-    Mod+C { spawn "bash" "-c" "pkill vlc || cvlc ~/focus/"; }
+    Mod+C { spawn "bash" "-c" "pkill vlc || cvlc -R ~/focus/"; }
 
     // power
     Mod+End { spawn "systemctl" "poweroff"; }
