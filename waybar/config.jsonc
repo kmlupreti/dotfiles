@@ -29,7 +29,7 @@
         "interval": 1,
     },
 "wireplumber": {
-    "format": "{icon} {volume}%",
+    "format": "{icon} {volume}% ",
     "format-muted": " ",
     "on-click": "pavucontrol",
     "format-icons": ["  ","  ", "  "],

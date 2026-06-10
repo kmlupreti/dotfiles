@@ -2,18 +2,18 @@
     border: none;
     border-radius: 4px;
     font-family: "JetBrainsMono Nerd Font";
-    font-size: 10px;
-    /* font-weight: bold; */
+    font-size: 12px;
+    font-weight: bold;
     min-height: 0;
-    padding: 2px;
-}
 
+}
 #waybar {
       background: transparent;
 }
 
 #workspaces button {
-  margin: 4px;
+  margin: 1px;
+  padding: 0px;
   border-radius: 4px;
 }
 
@@ -44,8 +44,8 @@
   font-weight: 500;
   color: #6d8895;
   background: #0f1419; 
-  padding: 0 10px;
-  margin: 3px 3px 3px 3px;
+  padding: 2px 10px;
+  margin: 2px 2px;
   background-clip: padding-box;
 }
 
