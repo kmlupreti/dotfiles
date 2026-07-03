@@ -1,3 +1,9 @@
 [[language]]
 name = "c"
-auto-format = true
+auto-format = false
+
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer.config]
+check = { command = "clippy", workspace = false }
