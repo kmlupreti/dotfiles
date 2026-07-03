@@ -25,8 +25,8 @@ binds {
     // common programs
     Mod+Return { spawn "ghostty"; }
     Mod+M { spawn "wofi"; }
-    Mod+F { spawn "ghostty" "--title=Yazi" "--class=com.yazi" "-e" "/home/kml/.local/bin/yazi"; }
-    Mod+E { spawn "ghostty" "--title=Helix" "--class=com.helix" "-e" "/home/kml/.local/bin/hx"; }
+    Mod+F { spawn "ghostty" "--title=Yazi" "--class=com.yazi" "-e" "yazi"; }
+    Mod+E { spawn "ghostty" "--title=Helix" "--class=com.helix" "-e" "hx"; }
     Mod+B { spawn "firefox"; }
     Mod+D { spawn "zathura"; }
     Mod+C { spawn "bash" "-c" "pkill vlc || cvlc -R ~/focus/"; }
