@@ -3,7 +3,7 @@ Name=Yazi File Manager
 Icon=yazi
 Comment=Blazing fast terminal file manager written in Rust, based on async I/O
 TryExec=yazi
-Exec=ghostty --class=com.yazi --title=Yazi -e /home/kml/.local/bin/yazi %F
+Exec=ghostty --class=com.yazi --title=Yazi -e yazi %F
 Terminal=false
 Type=Application
 MimeType=inode/directory

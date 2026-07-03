@@ -2,7 +2,7 @@
 Name=Helix
 GenericName=Text Editor
 TryExec=hx
-Exec=ghostty --class=com.helix --title=Helix -e /home/kml/.local/bin/hx %F
+Exec=ghostty --class=com.helix --title=Helix -e hx %F
 Terminal=false
 Type=Application
 Keywords=Text;editor;
