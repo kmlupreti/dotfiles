@@ -6,4 +6,23 @@ auto-format = false
 name = "rust"
 
 [language-server.rust-analyzer.config]
-check = { command = "clippy", workspace = false }
+check = { command = "clippy", workspace = false}
+
+[[language]]
+name = "scheme"
+language-servers = [ "steel-language-server" ]
+auto-format = true
+formatter = { command = "schemat"}
+
+[[language]]
+name = "lox"
+scope = "source.lox"
+injection-regex = "lox"
+file-types = ["lox"]
+roots = []
+comment-token = "//"
+
+# tree-sitter for lox 
+[[grammar]]
+name = "lox"
+source = { path = "/home/kml/src/tree-sitter-lox" }
