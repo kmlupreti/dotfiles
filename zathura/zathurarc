@@ -49,13 +49,16 @@ set show-recent 0
 set window-title-basename true
 
 # set dark mode on
- map d recolor 
+set recolor true
 
-# don't press shift to zoom in 
+# press d to toggle dark mode
+map d recolor 
+
+# press = to zoom
 map = zoom in
 
-# open a file
+# press o to open a file
 map o ":open"
 
-# file chooser
+# press e to open file chooser
 map e file_chooser
