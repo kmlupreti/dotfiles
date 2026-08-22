@@ -9,6 +9,15 @@ name = "rust"
 check = { command = "clippy", workspace = false}
 
 [[language]]
+auto-format = true
+language-servers = ["marksman", "mpls"]
+name = "markdown"
+
+[language-server.mpls]
+command = "mpls"
+args = ["--port", "8080", "--browser", "firefox", "--theme", "ayu-dark", "--no-auto", "--tabsj "]
+
+[[language]]
 name = "scheme"
 language-servers = [ "steel-language-server" ]
 auto-format = true

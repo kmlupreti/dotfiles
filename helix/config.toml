@@ -41,3 +41,4 @@ e = [
   ':open %sh{cat /tmp/unique-file}',
   ':redraw',
 ]
+v = ":lsp-workspace-command open-preview"
