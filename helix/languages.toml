@@ -15,7 +15,7 @@ name = "markdown"
 
 [language-server.mpls]
 command = "mpls"
-args = ["--port", "8080", "--browser", "firefox", "--theme", "ayu-dark", "--no-auto", "--tabsj "]
+args = ["--port", "8080", "--browser", "firefox", "--theme", "ayu-dark", "--no-auto", "--tabs"]
 
 [[language]]
 name = "scheme"
