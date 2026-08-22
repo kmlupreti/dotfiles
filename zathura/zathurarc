@@ -23,8 +23,11 @@ set completion-highlight-bg "#1c2738"
 set completion-highlight-fg "#b3b1ad"
 
 # set colors while on dark mode
-set recolor-lightcolor "#0a0e14" # bg color
-set recolor-darkcolor "#e0e0e0"  # text color
+# set recolor-lightcolor "#0a0e14" # bg color
+# set recolor-darkcolor "#e0e0e0"  # text color
+
+set recolor-lightcolor "#f4ebd0"
+set recolor-darkcolor  "#2b2b2b"
 set recolor-keephue "true"       # preserve original colors
 
 # set font
@@ -51,8 +54,8 @@ set window-title-basename true
 # set dark mode on
 set recolor true
 
-# press d to toggle dark mode
-map d recolor 
+# press r to toggle dark mode
+map r recolor 
 
 # press = to zoom
 map = zoom in
